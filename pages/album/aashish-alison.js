@@ -1,0 +1,123 @@
+import Head from "next/head";
+import AlbumTitle from "../../components/AlbumTitle";
+import ImageContainer from "../../components/ImageContainer";
+
+export default function Albums() {
+  return (
+    <>
+      <Head>
+        <title>Akshay Mehta - Albums</title>
+      </Head>
+      <main className="ms-container">
+        <AlbumTitle />
+        <div className="ms-section__block">
+          <div className="row">
+            <ImageContainer
+              images={[
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943967/Aashish%20x%20Alison/DSC00642_hiwdpi.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943967/Aashish%20x%20Alison/DSC09994-Edit_x6sh62.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943967/Aashish%20x%20Alison/DSC01947_elxbpx.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943967/Aashish%20x%20Alison/DSC09967-Edit_fhebbs.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943967/Aashish%20x%20Alison/DSC09537-Edit_txfa26.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943967/Aashish%20x%20Alison/DSC09533-Edit_enwhik.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943967/Aashish%20x%20Alison/DSC00638_ezvpjy.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943966/Aashish%20x%20Alison/_HSP5450-Edit_uqchca.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943966/Aashish%20x%20Alison/DSC00616_piruri.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943966/Aashish%20x%20Alison/DSC00616_piruri.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943966/Aashish%20x%20Alison/DSC01481-Edit_bayzip.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943966/Aashish%20x%20Alison/DSC09722-Edit_qcyldl.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943966/Aashish%20x%20Alison/DSC09613-Edit_wyvjem.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943965/Aashish%20x%20Alison/DSC09785-Edit_eduiqx.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943965/Aashish%20x%20Alison/DSC09410-Edit_sn8jbr.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943965/Aashish%20x%20Alison/_HSP5438-Edit_p9cr7o.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943965/Aashish%20x%20Alison/DSC01896_kd8m7m.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943965/Aashish%20x%20Alison/DSC01925_nbwh7j.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943965/Aashish%20x%20Alison/DSC09623-Edit_tqc0fl.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943965/Aashish%20x%20Alison/DSC01652-Edit_udbbcp.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943964/Aashish%20x%20Alison/DSC09738-Edit_rasmpt.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943964/Aashish%20x%20Alison/DSC01536-Edit_sevvmo.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943964/Aashish%20x%20Alison/DSC09773-Edit_ewjlbd.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943964/Aashish%20x%20Alison/DSC09981-Edit_ajelvf.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943964/Aashish%20x%20Alison/DSC01415-Edit_otrgsv.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943964/Aashish%20x%20Alison/_HSP4974-Edit_appu3f.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943964/Aashish%20x%20Alison/DSC09604-Edit_hkk3jx.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943963/Aashish%20x%20Alison/DSC09306-Edit_k1d9u8.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943963/Aashish%20x%20Alison/_HSP4921_diow6t.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943963/Aashish%20x%20Alison/DSC01539-Edit_abdcpf.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943963/Aashish%20x%20Alison/DSC09486-Edit_gaen1o.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943963/Aashish%20x%20Alison/DSC01938_ef4fzp.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943963/Aashish%20x%20Alison/DSC09980-Edit_fx2i1r.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943963/Aashish%20x%20Alison/DSC01454-Edit_uhz220.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943963/Aashish%20x%20Alison/DSC09984-Edit_zgodsv.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943963/Aashish%20x%20Alison/DSC09617-Edit_bqjyjk.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943962/Aashish%20x%20Alison/DSC09946-Edit_nky5q5.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943962/Aashish%20x%20Alison/DSC00626_lgib29.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943962/Aashish%20x%20Alison/DSC09519-Edit_iqu6bb.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943962/Aashish%20x%20Alison/DSC09782-Edit_koidvn.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943962/Aashish%20x%20Alison/DSC09447-Edit_vpr8mh.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943962/Aashish%20x%20Alison/DSC09977-Edit_z4ehj0.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943962/Aashish%20x%20Alison/_HSP5395-Edit_zb3fum.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943961/Aashish%20x%20Alison/DSC09950-Edit_cnrxup.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943961/Aashish%20x%20Alison/_HSP5377-Edit_p4wuck.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943961/Aashish%20x%20Alison/DSC00146-Edit_bnge7q.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943961/Aashish%20x%20Alison/DSC01981-Edit_omdmn0.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943961/Aashish%20x%20Alison/DSC00161-Edit_hyacqt.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943961/Aashish%20x%20Alison/RPR_4775-Edit_ke9wvf.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943961/Aashish%20x%20Alison/DSC09890-Edit_pug8ca.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943961/Aashish%20x%20Alison/DSC09746-Edit_sbojrk.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943960/Aashish%20x%20Alison/DSC09509-Edit_gcdvbc.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943960/Aashish%20x%20Alison/_HSP5017_mf5buj.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943960/Aashish%20x%20Alison/RPR_3253_cmb3d0.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943960/Aashish%20x%20Alison/DSC00167-Edit_p3m8hw.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943960/Aashish%20x%20Alison/DSC09559-Edit_vnksx2.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943960/Aashish%20x%20Alison/DSC01473-Edit_fhqkvz.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943960/Aashish%20x%20Alison/_HSP5362-Edit_qafykm.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943959/Aashish%20x%20Alison/DSC09812-Edit_w9n4xy.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943959/Aashish%20x%20Alison/_HSP4912_slkawq.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943959/Aashish%20x%20Alison/RPR_4760-Edit_jhfefw.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943959/Aashish%20x%20Alison/_HSP5013_e4uf4d.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943959/Aashish%20x%20Alison/_HSP5334-Edit_t4dmyc.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943959/Aashish%20x%20Alison/DSC08181-Edit_l1h2yq.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943959/Aashish%20x%20Alison/_HSP5456-Edit_aiarkf.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943959/Aashish%20x%20Alison/DSC00189-Edit_r31urf.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943959/Aashish%20x%20Alison/_HSP5045-Edit_bd9sly.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943959/Aashish%20x%20Alison/_HSP4958-Edit_kojcqz.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943958/Aashish%20x%20Alison/RPR_4770-Edit_uhph0f.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943958/Aashish%20x%20Alison/DSC09506-Edit_whendz.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943958/Aashish%20x%20Alison/DSC09696-Edit_pxrygx.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943958/Aashish%20x%20Alison/_HSP4948_fphvyf.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943958/Aashish%20x%20Alison/_HSP4993-Edit_n4lzrk.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943958/Aashish%20x%20Alison/DSC02066-Edit_y4ecfo.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943958/Aashish%20x%20Alison/_HSP5444-Edit_ekrwhd.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943957/Aashish%20x%20Alison/_HSP5030-Edit_qjmbch.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943957/Aashish%20x%20Alison/_HSP4926_vpspxb.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943957/Aashish%20x%20Alison/DSC09929-Edit_chqooi.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943957/Aashish%20x%20Alison/DSC09668-Edit_oc1xnu.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943957/Aashish%20x%20Alison/DSC09671-Edit_bdcfiu.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943957/Aashish%20x%20Alison/DSC09681-Edit_o62ruz.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943957/Aashish%20x%20Alison/DSC09754-Edit_enrerl.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943957/Aashish%20x%20Alison/DSC08186-Edit_z3fica.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943957/Aashish%20x%20Alison/DSC01966-Edit_lhcglg.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943956/Aashish%20x%20Alison/_HSP5371-Edit_fn6xgt.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943956/Aashish%20x%20Alison/DSC00197-Edit_xn2kgk.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943956/Aashish%20x%20Alison/_HSP5018-Edit_aqho9n.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943956/Aashish%20x%20Alison/DSC09990-Edit_noccpf.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943956/Aashish%20x%20Alison/DSC00140-Edit_zos4ss.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943956/Aashish%20x%20Alison/DSC09327-Edit_d6psb3.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943956/Aashish%20x%20Alison/_HSP5033-Edit_q6lrrh.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943956/Aashish%20x%20Alison/_HSP5412-Edit_soimje.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943956/Aashish%20x%20Alison/DSC00128-Edit_paiyt0.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943955/Aashish%20x%20Alison/DSC01909_szimt3.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943955/Aashish%20x%20Alison/DSC09608-Edit_gbyxc1.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943955/Aashish%20x%20Alison/DSC00059-Edit_lplwo9.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943955/Aashish%20x%20Alison/DSC00051-Edit_v4vh0v.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943955/Aashish%20x%20Alison/DSC09806-Edit_vv4jyi.png",
+                "https://res.cloudinary.com/akshaymehta/image/upload/v1633943955/Aashish%20x%20Alison/_HSP5468-Edit_svcmqa.png",
+              ]}
+            />
+          </div>
+        </div>
+      </main>
+    </>
+  );
+}
