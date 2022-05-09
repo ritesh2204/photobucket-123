@@ -35,7 +35,7 @@ const serviceData = [
   },
 ];
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await client.getEntries({
     content_type: 'services',
   });

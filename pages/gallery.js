@@ -2,7 +2,7 @@
 import ImageContainer from '../components/ImageContainer';
 import client from '../utils/client';
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await client.getEntries({
     content_type: 'gallery',
   });
